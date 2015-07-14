@@ -20,9 +20,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # gem 'bootstrap-sass', '~> 3.3.5'
 gem 'bootstrap-sass', '3.1.1.0'
-
-
+gem 'devise'
+gem 'protected_attributes'
 gem 'turbolinks'
+gem 'simple_form' #for from display
 
 gem 'jbuilder', '~> 2.0'
 

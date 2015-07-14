@@ -1,16 +1,16 @@
-<div class="jumbotron">
-	<div>
-			<h1>Welcome to My Picture Blog</h1>
-			<p>
-				You are going to experience a new type of picture 
-				blog created by sandeep
-				<%=link_to "One Month Rails","http://www.google.com"%>
-			</p>
-			<p>
-			<div class="col-md-4 center-block" >
-				<%=link_to "Signup","http://www.google.com",class: "btn btn center btn-primary center-block btn-large"%>
-				</div>
-			</p>
-	  </div>
-
- </div>
+<% if user_signed_in? %>
+#You Are Logged In.!!!
+<% else %>
+<div class="container">
+	<div class="jumbotron">
+	  <h1>Welcome to My Picture Blog</h1>
+	  	<p>You are going to experience a new type of picture 
+					blog created by sandeep
+					<%=link_to "One Month Rails","http://www.google.com"%>
+		</p>
+	  <p>
+	  		<%=link_to "Signup",new_user_registration_path,class: "btn btn-primary btn-lg"%>
+	  </p>
+	</div>
+</div>
+ <% end %>
