@@ -1,8 +1,15 @@
 <div class="container">
 	<div class="jumbotron">		
-		<%= simple_form_for(@pin, html:{class: "form-horizontal"})do |f| %>
+		<%= simple_form_for(@pin, html:{class: "form-horizontal"},html: { multipart:true })do |f| %>
 		  <%= f.error_notification %>
+		  <%= f.full_error :image_file_size, class: "alert alert-error" %>
+		  	 <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
+
+
+
+
+		  <%=f.input :image ,label: "Uplaod an image"%>
 		  <div class="form-inputs">
 		    <%= f.input :description, as: :text,input_html: {rows: "3",col: "5"} %>
 		  </div>

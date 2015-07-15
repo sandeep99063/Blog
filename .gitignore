@@ -21,3 +21,5 @@ doc/
 .project
 .DS_Store
 .idea
+#ignore the Paperclip uploaded files
+/public/system

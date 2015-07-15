@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'simple_form' #for from display
 
 gem 'jbuilder', '~> 2.0'
-
+gem "paperclip", "~> 4.3"
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
