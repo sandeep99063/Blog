@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,#:recoverable , 
          :rememberable, :trackable, :validatable
 
-         attr_accessor :email,:password,:password_confirmation,:remember_me,:name
+         attr_accessor :email,:password,:password_confirmation,:remember_me,:name,:user_id
          has_many :pins
 end
