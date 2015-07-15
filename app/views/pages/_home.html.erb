@@ -1,6 +1,4 @@
-<% if user_signed_in? %>
-#You Are Logged In.!!!
-<% else %>
+<% unless user_signed_in? %>
 <div class="container">
 	<div class="jumbotron">
 	  <h1>Welcome to My Picture Blog</h1>
